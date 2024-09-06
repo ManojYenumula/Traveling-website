@@ -1,0 +1,155 @@
+body{
+  margin:0;
+  padding: 0
+  
+
+
+  
+}
+.logo img{
+  width:50px;
+  
+  
+}
+.logo{
+  display: flex;
+  align-items:center;
+  gap:10px;
+}
+.header{
+  height:50px;
+  display:flex;
+  justify-content: space-between;
+}
+ul{
+  display:flex;
+  list-style-type: none;
+  gap:15px;
+  flex-wrap: wrap;
+  margin-right:10px;
+  
+}
+li{
+  border-radius: 3px;
+  transition: transform 0.5s, background 0.5s;
+}
+li:hover{
+  transform: scale(1.1);
+  background-color: aliceblue;
+  border-bottom: 2px solid black;
+  
+}
+.content{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top:270px;
+}
+.services
+{
+  display:flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  margin-top:20px;
+  flex-wrap: wrap;
+}
+.card1,.card2,.card3,.card1 img,.card2 img,.card3 img{
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  text-align: center;
+  
+}
+h2{
+  text-align: center;
+}
+.aboutus{
+  display: flex;
+  background-color: aliceblue;
+ margin-topt:30px;
+  justify-content: space-evenly;
+  padding: 30px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.aboutus img{
+  max-width: 400px;
+  max-height: 400px
+  
+}
+.aboutus p{
+  max-width: 400px;
+  max-height: 400px;
+   
+}
+.gallery img{
+  max-height: 400px;
+}
+.gallery img:hover{
+  transform: scale(1.2);
+  transition: transform 2.5s;
+  
+}
+.gallery{
+  margin-top:30px;
+  position: relative;
+  
+  
+   
+}
+h3{
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  
+}
+.footer{
+  background-color: rgb(50,20,34);
+ color:white;
+  display:flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  
+  
+  
+}
+@media only screen and (max-width:700px){
+  
+  
+  .menu_area{
+    display: none;
+  }
+  
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:5px;
+    
+  }
+  .gallery img,.aboutus img{
+    width: 300px;
+  }
+ h3{
+   position:static;
+   text-align: center;
+   
+ } 
+  .services{
+    gap:5px;
+  }
+  .content{
+    background-image: url(background.jpg);
+    height:400px;
+  }
+}
